@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f3f3f3;
+}
+/* main banner styling*/
+.main-banner{
+    width: 1200px;
+    height: 400px;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden; /* to hide when the image goes out from the continer*/
+    position: relative; /* helps with the position absolute later */
+}
+.main-banner .imgban{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  transition: all ease-in-out 300ms;
+    -webkit-transition: all ease-in-out 300ms;
+    -moz-webkit-transition: all ease-in-out 300ms;
+    -o-webkit-transition: all ease-in-out 300ms;
+}
+.main-banner #imgban3{
+    background-image: url(img/Perfect.Days.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-banner #imgban2{
+    background-image: url(img/road.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-banner #imgban1{
+    background-image: url(img/tiger_budda.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* buttons style */
+.imgbanbtn{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 35%;
+    top: 180px;
+    z-index: 2000;
+    cursor: pointer;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 32px;
+}
+.imgbanbtn-next{
+    right: 0px;
+}
+.imgbanbtn:hover{
+    opacity: 0.7;
+}
+.main-banner .imgban{
+    font-size: 16px;
+    font-family: helvetica;
+    color: #fff;
+    text-transform: uppercase;
+}
+.main-banner #imgban1 .img1{
+    padding-left: 100px;
+    padding-top: 70px;
+}
+.main-banner #imgban2 .img2{
+    padding-right: 70px;
+    padding-top: 120px;
+    float: right;
+}
+.main-banner #imgban3 .img3{
+    padding-left: 100px;
+    padding-top: 270px;
+}
